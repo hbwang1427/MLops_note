@@ -1,6 +1,4 @@
 # MLops
-* data management
-* modeling and experiments
 
 ## MLops vs Devops
 
