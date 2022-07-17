@@ -21,14 +21,14 @@ Continuous Monitoring is introduced—which monitors production data breaks in q
 
 Given the additional complexity of deploying machine learning models into production—how can data teams start adopting MLOps into their data science workflows? In this section, we introduce a simplified step-by-step approach in an MLOps process:   
 
-Building: Once models are created, they are typically placed in an auditable repository under version control to support reuse across the enterprise.
+- Building: Once models are created, they are typically placed in an auditable repository under version control to support reuse across the enterprise.
 
-Evaluation: The model predictions' quality is quantified at this stage by measuring the newly trained model performance on a new and independent dataset.
+- Evaluation: The model predictions' quality is quantified at this stage by measuring the newly trained model performance on a new and independent dataset.
 
-Productionizing: Export, deploy, and integrate the model or pipeline into production systems and applications.
+- Productionizing: Export, deploy, and integrate the model or pipeline into production systems and applications.
 
-Testing: continuous testing is important for ML-based applications, which is concerned with automatically retraining and serving the models.
+- Testing: continuous testing is important for ML-based applications, which is concerned with automatically retraining and serving the models.
 
-Deployment: Continuous monitoring is required to ensure optimal performance. The model can be retrained or replaced with a new model as data changes.
+- Deployment: Continuous monitoring is required to ensure optimal performance. The model can be retrained or replaced with a new model as data changes.
 
-Monitoring and observability: Many companies face challenges when it comes to moving machine learning models into production environments.
+- Monitoring and observability: Many companies face challenges when it comes to moving machine learning models into production environments.
