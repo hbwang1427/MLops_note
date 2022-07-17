@@ -32,3 +32,13 @@ Given the additional complexity of deploying machine learning models into produc
 - Deployment: Continuous monitoring is required to ensure optimal performance. The model can be retrained or replaced with a new model as data changes.
 
 - Monitoring and observability: Many companies face challenges when it comes to moving machine learning models into production environments.
+
+## MLops tools
+
+- Kubeflow: Kubeflow is a suite of tools for running Machine Learning workflows on Kubernetes clusters. The goal of Kubeflow is to enable the best open-source machine learning solutions to run on a Kubernetes cluster in a simple, portable, and scalable way. Originally Kubeflow was the open-source implementation of TensorFlow Extended (TFX), which is an end-to-end platform for deploying machine learning pipelines in production. Kubeflow thus allowed to simplify the execution of TensorFlow jobs on KubernetesMLFlow
+
+- MLflow is a tool for industrializing the end-to-end development process of Machine Learning projects. Its ambition is to simplify the development of Machine Learning projects in companies by facilitating models' monitoring, reproduction, management, and deployment.
+
+- Data Version Control (DVC): DVC (Data Version Control) is a Python package that makes managing your data science projects easier. This tool is an extension of Git for Machine Learning, as stated by its main contributor Dmitry Petrov in this presentation. DVC is both comparable and complementary to Git.
+
+- Pachyderm: Pachyderm is a version control tool for machine learning and data science like DVC. On top of that, it is based on Docker and Kubernetes, which helps it run and deploy Machine Learning projects on any cloud platform. In addition, pachyderm ensures that all data ingested into a machine learning model is versioned and traceable.
