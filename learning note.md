@@ -40,3 +40,13 @@ Given the additional complexity of deploying machine learning models into produc
 - Data Version Control (DVC): DVC (Data Version Control) is a Python package that makes managing your data science projects easier. This tool is an extension of Git for Machine Learning, as stated by its main contributor Dmitry Petrov in this presentation. DVC is both comparable and complementary to Git.
 
 - Pachyderm: Pachyderm is a version control tool for machine learning and data science like DVC. On top of that, it is based on Docker and Kubernetes, which helps it run and deploy Machine Learning projects on any cloud platform. In addition, pachyderm ensures that all data ingested into a machine learning model is versioned and traceable.
+
+数据管理：使用了 DVC 进行数据版本管理，当然也可以选择 Pachyderm，Hudi 等更大型的框架。
+特征管理：目前还没有实现。这方面开源框架的选择主要是 Feast 和 Hopsworks。
+流程编排：我们选择了比较好上手的 Prefect 来进行各种流程的编排，这里可以选的就有很多了，从老牌的 Luigi，Airflow 到新一代的 Flyte，Kubeflow 等。
+实验记录：选用了目前最流行的 MLFlow，主要也是因为可以自行部署。其它像 Weights and Biases，Neptune，谷歌的 MLMD 等也都是不错的选择。
+参数管理：选用了来自 Facebook 的 Hydra 进行尝试。
+服务打包：我们使用 Docker 对机器学习服务进行打包，其中的模型部分也会从 MLFlow 中载入。
+模型服务：使用最简单的 K8s 托管的容器进行服务，web 框架选择了 FastAPI。
+网络路由：选用了更加“现代化”的 Traefik，统一在 pulumi 中配置管理，非常方便。
+持续集成：直接利用 Github actions，代码提交后自动执行测试与部署，流畅。
